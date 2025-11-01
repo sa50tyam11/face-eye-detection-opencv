@@ -1,48 +1,66 @@
-Face & Eye Detection — Satyam Kumar Jha
-Real-time face and eye detection using C++ and OpenCV 4.
-Clean, minimal, and perfect for learning computer vision or showcasing your skills.
-Features
-Detects faces and eyes in real-time from your webcam.
-Lightweight, beginner-friendly C++ project.
-Uses Haar cascade classifiers for detection.
-Dem
-<img width="1442" height="861" alt="Screenshot 2025-11-01 at 11 49 32" src="https://github.com/user-attachments/assets/23a66483-2b37-4835-a1de-17080a1c738a" />
+Face & Eye Detection — Easy C++ & OpenCV Project
 
-Installation
-Clone the repository:
-git clone https://github.com/sa50tyam11/face-detection.git
-cd face-detection
-Install OpenCV 4 (C++):
-Mac (Homebrew):
-brew install opencv
-Ubuntu/Debian:
-sudo apt-get install libopencv-dev
-Compile the project:
-mkdir build
-cd build
-cmake ..
-make
-Usage
-Run the program:
-./FaceEyeDetection
-Webcam window titled "Face & Eye Detection — Satyam Kumar Jha" will open.
-Press q to quit.
-File Structure
-face-detection/
-├── main.cpp                       # C++ code for face & eye detection
-├── haarcascade_frontalface_default.xml
-├── haarcascade_eye.xml
-└── README.md
-How It Works
-Loads Haar cascade classifiers for face and eye detection.
-Captures frames from your webcam.
-Converts frames to grayscale for efficient detection.
-Detects faces first, then eyes inside detected faces.
-Highlights faces and eyes with rectangles in real-time.
-Requirements
-C++ compiler (g++, clang++, or MSVC)
-OpenCV 4.x
-Author
-Satyam Kumar Jha
-. GitHub: https://github.com/sa50tyam11
-. LinkedIn: https://www.linkedin.com/in/satyamkrjha5011
+Lightweight, beginner-friendly real-time face and eye detection demo using C++ and OpenCV 4. Uses Haar cascade classifiers for detection. Perfect for learning computer vision basics or showcasing your skills.​
+
+Features
+
+Detects faces and eyes in real time using webcam.​
+
+Minimal dependencies (OpenCV 4, C++).​
+
+Haar cascade classifiers for reliable detection.​
+
+Clean code – easy for beginners to read and extend.​
+
+Demo
+<img width="1442" height="861" alt="face eye detect " src="https://github.com/user-attachments/assets/24db83e9-9d37-48a7-881f-d8eff8cd6bda" />
+
+
+Getting Started
+
+Clone this repository.
+
+Install OpenCV 4 on your machine.
+
+Compile the code:
+
+text
+g++ face_detect.cpp -o face_detect `pkg-config --cflags --libs opencv4`
+Run the executable:
+
+text
+./face_detect
+File Overview
+
+File Name	Purpose
+face_detect.cpp	Main C++ source code
+haarcascade_frontalface_default.xml	Haar classifier for face detection
+haarcascade_eye.xml	Haar classifier for eye detection
+Customization
+
+Feel free to modify and extend the project to detect other features, experiment with different classifiers, or process saved images and videos instead of webcam input.​
+
+Credits
+
+Created by Satyam Kumar Jha. References: OpenCV documentation, public Haar cascades, and community tutorials.​
+
+GitHub: https://github.com/sa50tyam11
+LinkedIn: https://www.linkedin.com/in/satyamkrjha5011
+
+License
+
+This project uses the MIT License. See LICENSE for details.​
+
+Tips:
+
+Keep headings clear and use bullet points for features and steps.​
+
+Add a screenshot for visual clarity.​
+
+Provide copy-paste commands for compilation and running code.​
+
+Acknowledge sources and contributors, and include a license section.​
+
+Optional: Add a table of contents for long READMEs.​
+
+You can copy and paste this improved layout into your README. Adjust details (installation instructions, credits, license, etc.) to fit your project as needed.
